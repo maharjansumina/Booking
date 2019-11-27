@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hotel Booking System"
+            android:text="Room Booking System"
             android:textSize="30dp"
             android:textAlignment="center"
             android:background="#3DA4D1"
