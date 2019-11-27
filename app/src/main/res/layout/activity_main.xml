@@ -17,6 +17,7 @@
             android:text="Hotel Booking System"
             android:textSize="30dp"
             android:textAlignment="center"
+            android:background="#3DA4D1"
             android:layout_margin="10dp"/>
 
         <TextView
@@ -97,12 +98,12 @@
             android:id="@+id/btnCalculate"
             android:hint="Calculate"
             android:textSize="30dp"
+            android:background="#1BB2C5"
             android:layout_margin="50dp"/>
 
         <TextView
             style="@style/TextViewStyle"
-            android:id="@+id/tvResult"
-            android:hint="Grand Total:"/>
+            android:id="@+id/tvResult"/>
 
     </LinearLayout>
 </ScrollView>
