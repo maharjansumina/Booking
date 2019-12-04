@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         btnCalculate = findViewById(R.id.btnCalculate);
 
         // Data in array for spinner (Different Rooms)
-        final String rooms[] = {"Delux - Rs. 2000", "Presidential - Rs. 5000", "Premium - Rs. 4000"};
+        final String rooms[] = {"--Select Room Types --", "Delux - Rs. 2000", "Presidential - Rs. 5000", "Premium - Rs. 4000"};
         ArrayAdapter adapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,
@@ -144,6 +144,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
         DatePickerDialog datePickerDialog = new DatePickerDialog(
                 this, this, year, month, day);
+        datePickerDialog.getDatePicker().setMinDate(c.getTimeInMillis());
         datePickerDialog.show();
     }
 
@@ -166,6 +167,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                 tvCheckoutDate.setText(date);
             }
         }, year, month, day);
+        datePickerDialog.getDatePicker().setMinDate(c.getTimeInMillis());
         datePickerDialog.show();
     }
 }
